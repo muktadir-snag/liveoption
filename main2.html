@@ -751,7 +751,9 @@ var monthno;var dayno;
                     }else{
                         dayno = dayn-1;
                     }
-                   
+                    if(dayno.toString().length==1){
+                        dayno = '0'+(dayno);
+                    }
                     var nowDo = yearn + "-" + monthno + "-" + dayno;
                     console.log(dprice + "ddd");
 console.log(nowDo);
